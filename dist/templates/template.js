@@ -1,6 +1,12 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class Template {
-    constructor(option) {
-        this.option = option;
+    constructor() { }
+    confirmEmail(data) {
+        const title = data.title || 'confirmação de email';
+        return `
+      
+            `;
     }
 }
+exports.default = Template;
