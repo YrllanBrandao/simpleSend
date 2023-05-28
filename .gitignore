@@ -1,7 +1,2 @@
 .env
 /node_modules
-
-
-# test files
-app.ts
-/dist/app.js

@@ -1,6 +1,6 @@
 {
   "name": "simplesendmail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Send emails with different contexts using beautiful templates for common scenarios such as email confirmation and email recovery",
   "main": "app.js",
   "scripts": {
