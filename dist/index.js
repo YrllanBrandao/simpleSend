@@ -17,8 +17,6 @@ class simpleSend {
             return nodemailer_1.default.createTransport(newConfig);
         };
         this.send = (message) => {
-            // 
-            console.log("sending...");
             try {
                 const transporter = this.createTransport();
                 transporter.sendMail(message, (error, info) => {
