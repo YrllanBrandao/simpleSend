@@ -1,6 +1,7 @@
 
-const recovery_password_01 = (title:string, url:string, username:string) =>{
+function recovery_password_01(title:string, url:string, username:string){
    
+
     // main content
     return `
     <!DOCTYPE html>
@@ -23,7 +24,7 @@ const recovery_password_01 = (title:string, url:string, username:string) =>{
     
     </html>
   
-    `
+    `;
     
 }
 

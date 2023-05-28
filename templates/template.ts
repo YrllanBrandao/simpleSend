@@ -16,22 +16,8 @@ class Template {
 
   public confirmEmail(data:ConfirmEmail) {
      const title:string = data.title || 'confirmação de email';
-    return `
-    <!DOCTYPE html>
-    <html>
-    
-    <head>
-      <meta charset="utf-8">
-      <title>${title}</title>
-    </head>
-    
-    <body style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
-    ${confirm_email_01}
-    </body>
-    
-    </html>
-    
-            `;
+     const code:number = data.confirmationCode;
+    return confirm_email_01(title, code);
   }
   public recoveryPassword(data:Partial<RecoveryPassword>) {
     const title:string = data.title || 'Recuperação de senha';

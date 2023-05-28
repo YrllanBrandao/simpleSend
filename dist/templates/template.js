@@ -9,22 +9,8 @@ class Template {
     constructor() { }
     confirmEmail(data) {
         const title = data.title || 'confirmação de email';
-        return `
-    <!DOCTYPE html>
-    <html>
-    
-    <head>
-      <meta charset="utf-8">
-      <title>${title}</title>
-    </head>
-    
-    <body style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
-    ${template_01_1.default}
-    </body>
-    
-    </html>
-    
-            `;
+        const code = data.confirmationCode;
+        return (0, template_01_1.default)(title, code);
     }
     recoveryPassword(data) {
         const title = data.title || 'Recuperação de senha';
