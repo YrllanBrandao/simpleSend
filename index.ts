@@ -31,10 +31,7 @@ class simpleSend {
     }
 
     public send = (message: Message) => {
-        
-        // 
-       
-        console.log("sending...")
+    
        try{
         const transporter: Transporter = this.createTransport();
         transporter.sendMail(message, (error: unknown, info: unknown) => {

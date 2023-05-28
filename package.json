@@ -1,14 +1,13 @@
 {
-  "name": "simplesend",
+  "name": "simplesendmail",
   "version": "1.0.0",
-  "description": "",
+  "description": "Send emails with different contexts using beautiful templates for common scenarios such as email confirmation and email recovery",
   "main": "app.js",
   "scripts": {
-    "dev": "tsc & node ./dist/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc & node ./dist/app.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["nodemailer", "nodemailer", "simplesend", "simplesendmail", "email template sender"],
+  "author": "Yrllan Brandão",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3"
