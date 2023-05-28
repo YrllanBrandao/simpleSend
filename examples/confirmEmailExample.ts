@@ -13,7 +13,7 @@ const config:Config ={
     host: "smtp.office365.com",
     port: 587,
     auth: {
-      user: 'yrllanbrandao@outlook.com',
+      user: 'from@example.com',
       pass: process.env.PASSWORD!
     }
 }
@@ -31,9 +31,9 @@ const confirmEmailOptions: ConfirmEmail = {
 // message mandatory options
 const message:Message = {
     // mandatory
-    from: 'yrllanbrandao@outlook.com',
+    from: 'from@example.com',
     // mandatory
-    to: 'yrllanflamengp@gmail.com',
+    to: 'toExample@example.com',
     // optional
     subject: "only a test",
     // you should choose the template here and put him options
