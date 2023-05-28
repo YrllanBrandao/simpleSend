@@ -5,6 +5,11 @@ export interface ConfirmEmail{
   title?:string;
   confirmationCode: number;
 }
+export interface RecoveryPassword{
+  title?:string;
+  url:  string;
+  username?:string
+}
 
 class Template {
   constructor() { }
@@ -28,24 +33,11 @@ class Template {
     
             `;
   }
-  public recoveryPassword(data:ConfirmEmail) {
+  public recoveryPassword(data:Partial<RecoveryPassword>) {
     const title:string = data.title || 'Recuperação de senha';
-   return `
-   <!DOCTYPE html>
-   <html>
-   
-   <head>
-     <meta charset="utf-8">
-     <title>${title}</title>
-   </head>
-   
-   <body style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
-   ${recovery_password_01}
-   </body>
-   
-   </html>
-   
-           `;
+    const user: string  = data.username || "!";
+    const url: string = data.url || '#';
+   return recovery_password_01(title, url, user);
  }
 }
 

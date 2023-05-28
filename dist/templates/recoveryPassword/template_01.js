@@ -1,6 +1,6 @@
-
-const recovery_password_01 = (title:string, url:string, username:string) =>{
-   
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const recovery_password_01 = (title, url, username) => {
     // main content
     return `
     <!DOCTYPE html>
@@ -23,8 +23,6 @@ const recovery_password_01 = (title:string, url:string, username:string) =>{
     
     </html>
   
-    `
-    
-}
-
-export default  recovery_password_01;
+    `;
+};
+exports.default = recovery_password_01;
