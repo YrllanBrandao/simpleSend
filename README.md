@@ -4,6 +4,9 @@
 > Who has never needed to create an email confirmation or password recovery system?
 > Well, this tool aims to make the life of us developers easier, bringing beautiful and easily deliverable templates with minimal configuration.
 
+## DISCLAIMER
+
+The app is still in alpha, so it may not work as expected. If you find any bugs or has an suggestion, please report them in the [issues](https://github.com/YrllanBrandao/simpleSend/issues) section.
 
 # recovery password template 01
 ![image](https://github.com/YrllanBrandao/simpleSend/assets/77467410/b00316ea-145b-49de-b849-cb6dc0297984)
