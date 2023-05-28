@@ -43,4 +43,6 @@ const message:Message = {
 
 // sending the email
 const sender: simpleSendMail = new simpleSendMail(config);
+// returns success or error
+sender.send(message);
 
