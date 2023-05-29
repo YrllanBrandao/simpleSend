@@ -17,7 +17,9 @@ const config = {
         pass: process.env.PASSWORD
     }
 };
-// get template
+// get template instance
+// const template:Template = new Template('pt');
+// default: en
 const template = new template_1.default();
 // template options
 const confirmEmailOptions = {
