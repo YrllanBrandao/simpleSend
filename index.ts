@@ -25,8 +25,6 @@ class simpleSend {
             port: this.config.port,
             auth: this.config.auth
         }
-     
-        console.log(newConfig)
         return nodemailer.createTransport(newConfig);
     }
 
@@ -43,7 +41,7 @@ class simpleSend {
        }
        catch(error:any)
        {
-        console.log(error)
+        return console.log(error)
        }
     }
 }
