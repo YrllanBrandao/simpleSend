@@ -13,7 +13,7 @@ class Template {
     confirmEmail(data) {
         const title = data.title || 'confirmação de email';
         const code = data.confirmationCode;
-        return (0, template_01_1.default)(title, code);
+        return (0, template_01_1.default)(title, code, this.language);
     }
     recoveryPassword(data) {
         const title = data.title || 'Recuperação de senha';

@@ -19,7 +19,7 @@ class Template {
   public confirmEmail(data:ConfirmEmail) {
      const title:string = data.title || 'confirmação de email';
      const code:number = data.confirmationCode;
-    return confirm_email_01(title, code);
+    return confirm_email_01(title, code, this.language);
   }
   public recoveryPassword(data:Partial<RecoveryPassword>) {
     const title:string = data.title || 'Recuperação de senha';
