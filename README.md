@@ -15,3 +15,8 @@ The app is still in alpha, so it may not work as expected. If you find any bugs 
 ### template 01 - Confirm Email  
 
 ![image](https://github.com/YrllanBrandao/simpleSend/assets/77467410/8073c946-5d4a-4723-bb4c-d30a5730f7d6)
+
+
+### use Examples
+
+[HERE](https://github.com/YrllanBrandao/simpleSendMail/tree/main/examples)
