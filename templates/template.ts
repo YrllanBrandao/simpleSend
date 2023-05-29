@@ -1,6 +1,7 @@
 import confirm_email_01 from './confirmEmail/template_01';
 import recovery_password_01 from './recoveryPassword/template_01';
 
+
 export interface ConfirmEmail{
   title?:string;
   confirmationCode: number;

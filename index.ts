@@ -1,4 +1,4 @@
-import nodemailer, {  Transporter } from 'nodemailer';
+import nodemailer, {  Transporter } from 'nodemailer'
 
 export interface Config {
     host: string;
