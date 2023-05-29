@@ -33,7 +33,7 @@ const message:Message = {
     // mandatory
     from: 'your_email@example.com',
     // mandatory
-    to: 'yrllanflamengp@gmail.com',
+    to: 'to@example.com',
     // optional
     subject: "<only a test>",
     // you should choose the template here and put him options

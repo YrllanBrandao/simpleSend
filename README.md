@@ -20,3 +20,87 @@ The app is still in alpha, so it may not work as expected. If you find any bugs 
 ### use Examples
 
 [HERE](https://github.com/YrllanBrandao/simpleSendMail/tree/main/examples)
+
+
+# Simple Sendmail 
+
+<p>The Simple Sendmail library provides a simple way to send emails using Node.js. It allows you to set up email configurations, create email messages, and send them using SMTP.</p>
+
+Installation
+You can install Simple Sendmail using npm:
+
+```
+npm install simple-sendmail
+
+```
+
+
+
+
+### confirm Email Example
+
+
+
+```
+import simpleSend, {Message, Config} from "simple-sendmail";
+import Template, {ConfirmEmail} from 'simple-sendmail/dist/templates/template';
+```
+
+### Usage
+Creating an Email Template
+Here you can choose the language for the email text. If not specified, it will be sent in English. Options: 'en' and 'pt'.
+```
+const template:Template = new Template();
+```
+
+Configuring Email Options
+Each template (HTML) has its own options. For the 'confirmEmail' template, there are only two options, with the title being optional.
+
+```
+const confirmEmailOptions: ConfirmEmail = {
+    title: 'Please confirm your e-mail', // optional
+    confirmationCode: 999999 // mandatory
+};
+
+```
+
+
+Configuring Email Settings
+This tool uses nodemailer for sending emails, so you need to configure it accordingly.
+
+```
+// e-mail config
+const config: Config = {
+    host: "your_host.com",
+    port: 999,
+    auth: {
+        user: 'your_email@example.com',
+        pass: 'your_password'
+    }
+};
+
+```
+
+Creating the Email Message
+The send method of the library requires an object with the following options:
+
+```
+const message: Message = {
+    from: 'your_email@example.com', // mandatory
+    to: 'to@example.com', // mandatory
+    subject: "<only a test>", // optional
+    html: template.confirmEmail(confirmEmailOptions) // choose the template and its options here
+};
+```
+
+### Sending the Email
+<p>Create an instance of the simpleSend class using the configured email settings. Then, use the send method to send the email message</p>
+
+```
+const sender = new simpleSend(config);
+sender.send(message);
+```
+
+### Result
+
+![image](https://github.com/YrllanBrandao/simpleSendMail/assets/77467410/2470dc10-a8e5-4f40-b7a0-5d2ab3e6ae0c)
