@@ -1,31 +1,13 @@
-import dotenv from 'dotenv';
-import simpleSendMail, {Config, Message} from "../index";
-import Template, { RecoveryPassword} from "../templates/template";
+import simpleSend, {Message, Config} from "simple-sendmail";
+import Template, {RecoveryPassword} from 'simple-sendmail/dist/templates/template';
 
-
-// load enviroment variables
-dotenv.config();
-
-
-
-// e-mail config
-const config:Config ={
-    host: "smtp.example.com",
-    port: 587,
-    auth: {
-      user: 'email@example.com',
-      pass: process.env.PASSWORD!
-    }
-}
-// get template object, you can select bewtween pt and default is  en
-
-
-// pt
-// const template:Template = new Template('pt');
 
 
 // default: en
 const template:Template = new Template();
+
+
+
 
 // template options
 
@@ -37,21 +19,35 @@ const recoveryPasswordOptions:RecoveryPassword = {
     // optional
     title: "recovery pass.."
 }
+
+// e-mail config
+const config:Config ={
+    host: "your email host",
+    port: 23,
+    auth: {
+      user: 'your_email@example.com',
+      pass: 'your_pass'
+    }
+}
+
+
 // message mandatory options
 const message:Message = {
     // mandatory
-    from: 'email@example.com',
+    from: 'your_email@example.com',
     // mandatory
     to: 'to@example.com',
     // optional
-    subject: "only a test",
+    subject: "<only a test>",
     // you should choose the template here and put him options
     html: template.recoveryPassword(recoveryPasswordOptions)
 }
 
 
+
 // sending the email
-const sender: simpleSendMail = new simpleSendMail(config);
+const sender: simpleSend = new simpleSend(config);
 // returns success or error
 sender.send(message);
+
 
