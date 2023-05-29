@@ -13,7 +13,6 @@ class simpleSend {
                 port: this.config.port,
                 auth: this.config.auth
             };
-            console.log(newConfig);
             return nodemailer_1.default.createTransport(newConfig);
         };
         this.send = (message) => {
@@ -28,7 +27,7 @@ class simpleSend {
                 });
             }
             catch (error) {
-                console.log(error);
+                return console.log(error);
             }
         };
         this.config = config;
