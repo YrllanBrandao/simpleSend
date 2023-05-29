@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import simpleSendMail, {Config, Message} from "../index";
-import Template, {ConfirmEmail, RecoveryPassword} from "../templates/template";
+import Template, { RecoveryPassword} from "../templates/template";
 
 
 // load enviroment variables
@@ -17,8 +17,16 @@ const config:Config ={
       pass: process.env.PASSWORD!
     }
 }
-// get template object
+// get template object, you can select bewtween pt and default is  en
+
+
+// pt
+// const template:Template = new Template('pt');
+
+
+// default: en
 const template:Template = new Template();
+
 // template options
 
 const recoveryPasswordOptions:RecoveryPassword = {

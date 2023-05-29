@@ -6,7 +6,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const template_01_1 = __importDefault(require("./confirmEmail/template_01"));
 const template_01_2 = __importDefault(require("./recoveryPassword/template_01"));
 class Template {
-    constructor() { }
+    constructor(language = 'en') {
+        this.language = language;
+        this.language = language;
+    }
     confirmEmail(data) {
         const title = data.title || 'confirmação de email';
         const code = data.confirmationCode;
@@ -16,7 +19,7 @@ class Template {
         const title = data.title || 'Recuperação de senha';
         const user = data.username || "!";
         const url = data.url || '#';
-        return (0, template_01_2.default)(title, url, user);
+        return (0, template_01_2.default)(title, url, user, this.language);
     }
 }
 exports.default = Template;

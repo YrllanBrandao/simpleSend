@@ -12,7 +12,9 @@ export interface RecoveryPassword{
 }
 
 class Template {
-  constructor() { }
+  constructor(public language:string='en'){
+    this.language = language;
+   }
 
   public confirmEmail(data:ConfirmEmail) {
      const title:string = data.title || 'confirmação de email';
@@ -23,7 +25,7 @@ class Template {
     const title:string = data.title || 'Recuperação de senha';
     const user: string  = data.username || "!";
     const url: string = data.url || '#';
-   return recovery_password_01(title, url, user);
+   return recovery_password_01(title, url, user, this.language);
  }
 }
 
