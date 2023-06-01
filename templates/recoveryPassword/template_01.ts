@@ -1,5 +1,5 @@
 
-function recovery_password_01(title: string, url: string, username: string, language: string) {
+function recovery_password_01( url: string, username: string, language: string) {
   // Define language-specific strings
   const strings = {
     en: {

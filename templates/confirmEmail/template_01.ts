@@ -1,4 +1,4 @@
-function confirm_email_01(title: string, code: number, language: string) {
+function confirm_email_01( code: number, language: string) {
   // Define language-specific strings
   const strings = {
     en: {
