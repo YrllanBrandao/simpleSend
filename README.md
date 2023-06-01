@@ -58,7 +58,6 @@ Each template (HTML) has its own options. For the 'confirmEmail' template, there
 
 ```
 const confirmEmailOptions: ConfirmEmail = {
-    title: 'Please confirm your e-mail', // optional
     confirmationCode: 999999 // mandatory
 };
 
