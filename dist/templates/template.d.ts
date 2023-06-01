@@ -1,9 +1,7 @@
 export interface ConfirmEmail {
-    title?: string;
     confirmationCode: number;
 }
 export interface RecoveryPassword {
-    title?: string;
     url: string;
     username?: string;
 }

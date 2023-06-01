@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-function confirm_email_01(title, code, language) {
+function confirm_email_01(code, language) {
     // Define language-specific strings
     const strings = {
         en: {

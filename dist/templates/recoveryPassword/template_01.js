@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-function recovery_password_01(title, url, username, language) {
+function recovery_password_01(url, username, language) {
     // Define language-specific strings
     const strings = {
         en: {

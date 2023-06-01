@@ -11,15 +11,13 @@ class Template {
         this.language = language;
     }
     confirmEmail(data) {
-        const title = data.title || 'confirmação de email';
         const code = data.confirmationCode;
-        return (0, template_01_1.default)(title, code, this.language);
+        return (0, template_01_1.default)(code, this.language);
     }
     recoveryPassword(data) {
-        const title = data.title || 'Recuperação de senha';
         const user = data.username || "!";
         const url = data.url || '#';
-        return (0, template_01_2.default)(title, url, user, this.language);
+        return (0, template_01_2.default)(url, user, this.language);
     }
 }
 exports.default = Template;
