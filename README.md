@@ -82,7 +82,6 @@ const config: Config = {
 ```
 
 Creating the Email Message
-The send method of the library requires an object with the following options:
 
 ```
 const message: Message = {
