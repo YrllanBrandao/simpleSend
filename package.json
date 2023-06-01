@@ -1,6 +1,6 @@
 {
   "name": "simple-sendmail",
-  "version": "1.0.1",
+  "version": "1.0.21",
   "description": "Send emails with different contexts using beautiful templates for common scenarios such as email confirmation and email recovery",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -11,8 +11,13 @@
     "simplesendmail",
     "email template sender"
   ],
+
   "author": "Yrllan Brandão",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YrllanBrandao/simpleSendMail.git"
+  },  
   "dependencies": {
     "dotenv": "^16.0.3"
   },

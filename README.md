@@ -69,7 +69,7 @@ Configuring Email Settings
 This tool uses nodemailer for sending emails, so you need to configure it accordingly.
 
 ```
-// e-mail config
+// Node mailer configuration
 const config: Config = {
     host: "your_host.com",
     port: 999,
